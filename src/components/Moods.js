@@ -1,5 +1,4 @@
 import React, { useReducer }  from 'react';
-import PropTypes from 'prop-types';
 import moodReducer from '../reducers/reducer';
 import Controls from './controls/Controls';
 import Face from './face/Face';
@@ -25,8 +24,6 @@ export default function Moods() {
 
   return (
     <>
-      {/* <Controls actions={controlActions} handleSelection={name => dispatch(name)}/> */}
-      {/* <Controls dispatch={dispatch} moodState={moodState} handleSelection={name => dispatch(name)}/> */}
       <Controls controlsInfo={controlsInfo} />
       <Face emoji={mood} />
     </>
